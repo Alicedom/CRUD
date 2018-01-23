@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="libs/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="libs/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="libs/bootstrap.min.js"></script>
+
+        <meta charset="UTF-8">
+
+        <title> Nhập thông tin nhân viên</title>
+    </head>
+    <body>
+        <form class="form-horizontal" method="post" action="../control/form_boottrap_control.php" >
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Nhập thông tin nhân viên marketing của Language Link</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="name">Họ tên</label>  
+                    <div class="col-md-4">
+                        <input id="name" name="name" type="text" placeholder="Nguyễn Văn A" value="Nguyễn Văn A" class="form-control input-md" required="">
+                        <span class="help-block">Ghi đầy đủ thông tin họ tên</span>  
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="birth">Ngày sinh</label>  
+                    <div class="col-md-4">
+                        <input id="birth" name="birth" type="date" placeholder="02/09/1993" value ="1993-09-02" min="1950-01-01" max="2018-01-01" class="form-control input-md" required="">
+                        <span class="help-block">Nhập vào ngày sinh của bạn</span>  
+                    </div>
+                </div>
+
+                <!-- Prepended text-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="phone">Số điện thoại</label>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">84+</span>
+                            <input id="phone" name="phone" class="form-control" placeholder="1234567890" value ="1234567890" type="number" min="900000000" max="1999999999" required="">
+                        </div>
+                        <p class="help-block">Nhập số điện thoại</p>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="email">Email</label>  
+                    <div class="col-md-4">
+                        <input id="email" name="email" type="email" placeholder="abc@gmail.com" value="abc@gmail.com" class="form-control input-md" required="">
+                        <span class="help-block">Nhập email bao gồm @</span>  
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="addr">Địa chỉ</label>  
+                    <div class="col-md-4">
+                        <input id="addr" name="addr" type="text" placeholder="Hà Nội" value="Hà Nội" class="form-control input-md" required="">
+                        <span class="help-block">Nhập vào địa chỉ</span>  
+                    </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="des">Mô tả</label>
+                    <div class="col-md-4">                     
+                        <textarea class="form-control" id="des" name="des" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <!-- File Button --> 
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="image" >Avatar</label>
+                    <div class="col-md-4">
+                        <input id="image" name="image" class="input-file" type="file">
+                    </div>
+                </div>
+
+                <!-- Button (Double) -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="submit"></label>
+                    <div class="col-md-8">
+                        <button id="submit" name="submit" class="btn btn-success">Submit</button>
+                        <button id="cancel" name="cancel" class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </body>
+</html>

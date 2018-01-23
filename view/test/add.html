@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body {background-color: lightgray;}
+            tr {margin: 5px;}
+            td {margin: 5px;}
+        </style>
+        <script src="add.js"></script>
+    </head>
+    <body>
+        <form  action="add.php" method="post">
+            <table style="width:100%">
+                <tr>
+                    <td>Tên</td>
+                    <td><input type="text" name="name" value="Khanh" class="form-control"></td> 
+                </tr>
+                <tr>
+                    <td>Mô tả ngắn</td>
+                    <td><textarea name="des">Input Des</textarea></td> 
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td><input type="tel" name="phone" value="01653820462"></td> 
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" value="phamquockhanhhy@gmail.com"></td> 
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td><input type="text" name="addr" value="P416 B9 Bách Khoa"></td> 
+                </tr>
+                <tr>
+                    <td>Avatar</td>
+                    <td><input type="text" name="image"></td> 
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td><input type="date" name="birth" value="1993-09-02"></td> 
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><a href="view.html"><button type="button">Cancel</button></a></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
