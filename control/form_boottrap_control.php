@@ -13,8 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_FILES['image'])) {
         $image = $_FILES['image']['name'];
         upload($_FILES['image']);
- 
     }
+    
 
     insert_employee($name, $des, $phone, $email, $addr, $image, $birth);
     header("Location: ../view/view_div.php");

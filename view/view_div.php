@@ -6,13 +6,16 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <link rel="stylesheet" href="libs/style.css" type="text/css"/>
-
+        
         <title>View list employees</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script src="libs/jquery.min.js"></script>
+        <script src="libs/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="libs/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="libs/style.css" type="text/css"/>
+        
         <script>
             $(document).ready(function () {
                 $(".delete").click(function () {
@@ -47,6 +50,8 @@ and open the template in the editor.
     </head>
     <body>
         <h1>BẢNG DANH SÁCH NHÂN VIÊN</h1>
+        
+        <a href="form2_boottrap.html"><button type="button" class="btn btn-primary">Add new Employee</button></a>
         <div class="divTable blueTable">
             <div class="divTableHeading">
                 <div class="divTableRow">
@@ -84,7 +89,7 @@ and open the template in the editor.
                             <div class="btn-group" action="../control/view_div_control.php">
                                 <button type="button" class="btn btn-primary ">Xem</button>
                                 <button type="button" class="btn btn-warning" onclick='alert("hi")'>Sửa</button>
-                                <button type="button" class="delete" >Xóa</button>
+                                <button type="button" class="btn btn-info delete" >Xóa</button>
                             </div>
                         </div>
                     </div>
